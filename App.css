@@ -1,0 +1,93 @@
+/* src/App.css */
+
+.calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5; /* Soft light background */
+}
+
+.calculator {
+  width: 320px; /* Set a fixed width */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.calculator:hover {
+  transform: scale(1.05); /* Slight hover effect */
+}
+
+.display {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  font-size: 2.5em;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  text-align: right;
+  background-color: #fafafa;
+  color: #333;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.buttons button {
+  padding: 20px;
+  font-size: 1.8em;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.buttons button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px); /* Button lift effect */
+}
+
+.buttons button:active {
+  background-color: #388e3c; /* Darker green on click */
+  transform: translateY(2px); /* Button press effect */
+}
+
+button.clear {
+  background-color: #FF5722; /* Red for clear */
+}
+
+button.clear:hover {
+  background-color: #e64a19;
+}
+
+button.equals {
+  background-color: #2196F3; /* Blue for equal button */
+}
+
+button.equals:hover {
+  background-color: #1976D2;
+}
+
+button.operator {
+  background-color: #FFC107; /* Yellow for operators */
+}
+
+button.operator:hover {
+  background-color: #FFB300;
+}
